@@ -1,24 +1,24 @@
 class ConsumerError extends Error
   constructor: (@message) ->
-    super
+    super arguments...
 class ExtensionError extends Error
   constructor: (@message) ->
-    super
+    super arguments...
 class StoreError extends Error
   constructor: (@message) ->
-    super
+    super arguments...
 class ParameterError extends Error
   constructor: (@message) ->
-    super
+    super arguments...
 class SignatureError extends Error
   constructor: (@message) ->
-    super
+    super arguments...
 class NonceError extends Error
   constructor: (@message) ->
-    super
+    super arguments...
 class OutcomeResponseError extends Error
   constructor: (@message) ->
-    super
+    super arguments...
 
 module.exports =
   ConsumerError: ConsumerError

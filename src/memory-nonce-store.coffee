@@ -6,6 +6,7 @@ EXPIRE_IN_SEC = 5 * 60
 class MemoryNonceStore extends NonceStore
 
   constructor: () ->
+    super arguments...
     @used = Object.create(null)
 
   isNew: (nonce, timestamp, next=()->)->

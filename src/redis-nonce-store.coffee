@@ -6,6 +6,7 @@ EXPIRE_IN_SEC = 5*60
 class RedisNonceStore extends NonceStore
 
   constructor: (redisClient) ->
+    super arguments...
     if typeof redisClient is 'string' and arguments.length is 2
       redisClient = arguments[1]
     @redis = redisClient
